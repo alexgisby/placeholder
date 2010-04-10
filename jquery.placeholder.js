@@ -1,12 +1,22 @@
 
+//
+// jQuery Placeholder plugin
+//	by Alex Gisby
+// 
+// Quick little plugin for replicating the placeholder attribute in HTML5 for all browsers.
+//
+// This software is licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
+//
+// Enjoy!
+//
+
+
 jQuery.fn.placeholder = function()
 {
-	// Support list: (thanks to )
+	// Support bits: (thanks to Dive into HTML 5 (http://diveintohtml5.org/))
 	var i = document.createElement('input');
 	jQuery.support.placeholder = ('placeholder' in i);
 	
-	// placeholder attribute
-	// Webkit is the only one who supports this property so far.
 	jQuery.each(this, function()
 	{
 		if(jQuery(this).attr('placeholder'))

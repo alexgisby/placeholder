@@ -8,3 +8,5 @@ Works across all browsers. If the browser supports placeholder already (webkit b
 Check index.html for an example usage of the plugin.
 
 Supports everything that jQuery does, and works with jQuery 1.3.x and 1.4.x.
+
+Big thanks to [Dive Into HTML5](http://diveintohtml5.org/) for inspiration and the placeholder support sensing code.
