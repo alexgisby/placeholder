@@ -48,6 +48,16 @@ jQuery.fn.placeholder = function()
 					jQuery(this).addClass('placeholder-active');
 				}
 			});
+			
+			// Go and add a submit callback for this form to erase the data
+			jQuery(this).parents('form').bind('submit', { placeholderElement: jQuery(this) }, function(event)
+			{
+				var element = event.data.placeholderElement;
+				if(element.val() == element.attr('placeholder'))
+				{
+					element.val('');
+				}
+			});
 		}
 	});
 }
