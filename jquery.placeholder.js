@@ -10,7 +10,7 @@
 // Enjoy!
 //
 
-
+$(function(){$('input[type=text], textarea').placeholder();})
 jQuery.fn.placeholder = function()
 {
 	// Support bits: (thanks to Dive into HTML 5 (http://diveintohtml5.org/))
